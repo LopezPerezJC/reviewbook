@@ -1,0 +1,565 @@
+:root{
+    --color-general: #aed3f9;
+    --color-botones: #1C4881;
+    --color-botones-hover: #ED5B2E;
+    --color-fondo: #ebf5ff;
+    --color-primario: #ebf4fe;
+    --color-terciario: #F75777;
+    --color-cuarto: #0081A7;
+}
+
+.contenedor-padre-content{
+    /*background: #fff;*/
+    display:flex;
+	flex-flow:row wrap;
+    color: #000;
+}
+body {
+    font-family: arial;
+}
+/*-------------------*/
+/* banner*/
+/*-------------------*/
+.contenedor-banner{
+    background-image: url(../img/Banner_ReviewBook.png);
+    width: 100%;
+    max-width: 1920px;
+    height: 500px;
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*-------------------*/
+/* Buscador*/
+/*-------------------*/
+.buscador {
+    padding: 10px;
+    height: 40px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 1.875rem;
+}
+
+.buscador .input-bsc {
+    width: 300px;
+    border: solid 0rem;
+    outline: none;
+    text-align: center;
+    
+    padding: 10px 10px 10px 10px;
+}
+.fa-search {
+    color: #1C4881;
+    text-align: center;
+    padding: 0px;
+}
+.btn_buscar {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.buscador .fa-search:hover {
+    color:#ED5B2E;
+    background: none;
+    border: none;
+}
+
+/* cuerpo*/
+
+.main {
+    width: 100%;
+    max-width: 80rem;
+    margin:0px auto;
+}
+
+/*-------------------*/
+/* Recomendados*/
+/*-------------------*/
+
+/*titulos secciones*/
+.titulo-mas-leidos, .titulo-sobre-recomendados{
+    font-size: 40px;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 0.3125rem;*/
+    
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0px 0px 0px;
+}
+.titulo-mas-leidos{
+    background: #EDF4FE;
+}
+.titulo-sobre-recomendados {
+    background: #F75777;
+    color: #fff;
+}
+
+.contenedor-mas-leidos{
+    max-width: 1280px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/*--------------*/
+/*SECCIÓN TEMÁTICAS*/
+/*--------------*/
+
+/*TITULO*/
+.titulo_tematicas {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #F75777;
+    
+    
+}
+.titulo_principal_tematicas {
+    font-size: 40px;
+    color: #fff;
+}
+
+/*seccion contenido*/
+.contenedor_seccion_tematicas {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 1280px;
+    /*background: #1C4881;*/
+    margin: 8px;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.seccion1_tematica, .seccion2_tematica, .seccion3_tematica, .seccion4_tematica, .seccion5_tematica, .seccion6_tematica{
+    margin: 10px 0px 10px 0px;
+    height: 200px;
+    width: 387px;
+    padding: 0px;
+}
+ .seccion_portada {
+    height: 50%;
+}
+ .seccion_portada img {
+    position: relative;
+    width: 387px;
+    height: 200px;
+    z-index: 100;
+}
+.seccion1_tematica .seccion_informacion {
+    position: relative;
+    background: #D6D66F;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+}
+/*EFECTO HOVER EN TARGETA TEMATICA*/
+.seccion1_tematica .seccion_informacion:hover {
+    background: #2E4571;
+    transition: all ease .8s;
+}
+
+.informacion {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.informacion h2{
+    color: #fff;
+    font-family: Arial;
+    font-size: 16px;
+}
+.informacion a {
+    width: 100px;
+    padding: 5px;
+    color: #fff;
+    margin: 8px;
+    text-decoration: none;
+    border: solid 2px #fff;
+    border-radius: 30px;
+}
+.informacion a:hover {
+    color: #fff;
+    background: #2E4571;
+    font-size: 17px;
+}
+
+/*tematica 2*/
+.seccion2_tematica .seccion_informacion {
+    position: relative;
+    background: #0081A7;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+}
+/*EFECTO HOVER EN TARGETA TEMATICA*/
+.seccion2_tematica .seccion_informacion:hover {
+    background: #2E4571;
+    transition: all ease .8s;
+}
+
+/*tematica 3*/
+.seccion3_tematica .seccion_informacion {
+    position: relative;
+    background: #00AFB9;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+}
+/*EFECTO HOVER EN TARGETA TEMATICA*/
+.seccion3_tematica .seccion_informacion:hover {
+    background: #2E4571;
+    transition: all ease .8s;
+}
+
+/*tematica 4*/
+.seccion4_tematica .seccion_informacion {
+    position: relative;
+    background: #BC69AA;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+}
+/*EFECTO HOVER EN TARGETA TEMATICA*/
+.seccion4_tematica .seccion_informacion:hover {
+    background: #2E4571;
+    transition: all ease .8s;
+}
+
+/*tematica 5*/
+.seccion5_tematica .seccion_informacion {
+    position: relative;
+    background: #F07167;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+}
+/*EFECTO HOVER EN TARGETA TEMATICA*/
+.seccion5_tematica .seccion_informacion:hover {
+    background: #2E4571;
+    transition: all ease .8s;
+}
+
+/*tematica 6*/
+.seccion6_tematica .seccion_informacion {
+    position: relative;
+    background: #5A716A;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+}
+/*EFECTO HOVER EN TARGETA TEMATICA*/
+.seccion6_tematica .seccion_informacion:hover {
+    background: #2E4571;
+    transition: all ease .8s;
+}
+
+
+/*-------------------*/
+/*SECCION LOS MÁS LEIDOS*/
+/*-------------------*/
+
+.recomendados {
+    height: 300px;
+    width: 200px;
+    
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background: #2E4571;
+    color: #fff;
+}
+.lib{
+    height: 180px;
+    max-height: 180px;
+    width: auto;
+    border-radius: 4px;
+}
+
+/*titulos libros*/
+.recomendados h2{
+    /*font-weight: lighter;*/
+    padding: 3px;
+    font-size: 16px;
+    width: 200px;
+}
+.recomendados p {
+    font-size: 14px;
+    padding: 2px;
+    width: 180px;
+    overflow: hidden;
+}
+
+.recomendados a{
+    height: 40px;
+    padding: 5px;
+    max-width: 120px;
+    
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 0.3125rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+
+    color: #fff;
+    background: #F75777;
+ }
+.recomendados a:hover{
+    background: #ED5B2E;
+    color: #000;
+}
+/*-------------------*/
+.cont-hijo-recomendado{
+    display: flex;
+    justify-content: space-around;
+    background: #0E1428;
+}
+
+/*-------------------*/
+/* SECCION RECOMENDACIONES*/
+/*-------------------*/
+
+.enlace-recomendaciones{
+    text-decoration: none;
+}
+.contenedor-recomendaciones{ 
+    max-width: 80rem;
+    margin: 0rem auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.contenedor-targeta{
+    margin: 25px;
+}
+
+.contenedor-targeta a{
+    display: inline-block;
+}
+.contenedor-targeta:hover figure {/*cuando se active figure se rota*/
+    transform: perspective(600px) rotateY(180deg);
+
+    -webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+}
+
+figure {
+    width: 180px;
+    height: 240px;
+    margin:0rem;
+    position: relative;/*modificar posiciones*/
+    transition: all ease .5s; /*indicar la rotacion*/
+    transform-style: preserve-3d;/*permite compartir con los elementos hijo la propiedad de 3d*/
+    transform: perspective(600px) rotateY(0deg);/*deg = grados*/
+}
+figure .frontal{
+    width: 180px;
+    height: 240px;
+    border-radius: 0.3125rem;
+    transition: all ease .5s;
+}
+
+/* si se usan elementos para trasero reestablecer tam a
+width: 160px;
+height: 220px;
+*/
+figure .trasero {
+    width: 180px;
+    height: 240px;
+    /*border-radius: 5px;*/
+    transition: all ease .5s;
+}
+
+figure .frontal {
+    display: block;
+    /*backface-visibility: hidden;*//*modifica la vista de atras*/
+}
+
+figure .trasero {
+    position: absolute; /*posicionar el texto sobre la imagen*/
+    top:0;
+
+    padding: 10px;
+    color: #2E4571;
+    text-align: center;
+    background: #EDF4FE;
+
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden; /*ocultar cara trasera de la targeta*/
+    overflow: auto; /*scroll si el texto rebasa el tam establecido*/
+}
+/*fondos trasero*/
+.contenedor-targeta figcaption:nth-child(1) {
+    background: #D4F1F4;    
+}
+
+figure .trasero img {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+}
+figure .trasero .tit-autor{
+    font-weight: normal;
+    margin-bottom: 0.3125rem;
+    margin-top: 0.625rem;
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+figure .trasero hr{
+    height: 2px;
+    background: #2E4571;
+    border: none;
+    margin-bottom: 0.3125rem;
+    opacity: .5;
+}
+figure .trasero p{
+    font-family: 'open sans' ;
+    line-height: 1.125rem;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1120px) {
+    /*-------------------*/
+    /*SECCION LOS MÁS LEIDOS*/
+    /*-------------------*/
+    .recomendados {
+        height: auto;
+        width: 150px;
+    
+        border-radius: 4px;
+        padding: 5px;
+        margin: 8px;
+        background: #2E4571;
+        color: #fff;
+    }
+    .lib{
+        height: 150px;
+        max-height: 150px;
+        width: auto;
+        border-radius: 4px;
+    }
+
+    /*titulos libros*/
+    .recomendados h2{
+        /*font-weight: lighter;*/
+        padding: 3px;
+        font-size: 14px;
+        width: auto;
+    }
+    .recomendados p {
+        font-size: 14px;
+        padding: 2px;
+        width: auto;
+        overflow: hidden;
+    }
+    /*-------------------*/
+    .cont-hijo-recomendado{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contenedor-banner {
+        background-image: url(../img/banner2.jpg);
+        max-height: 200px;
+        width: 100%;
+        max-width: 900px;
+    }
+    .titulo-mas-leidos {
+        background: #ebf4fe;
+        font-size: 30px;
+        color: #2e4571;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #eliminar {
+        display: none;
+    }
+}
+@media screen and (max-width: 815px) {
+
+}
+@media screen and (max-width: 600px) {
+    .titulo-mas-leidos, .titulo-sobre-recomendados, .titulo_principal_tematicas {
+        font-size: 20px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*más leídos*/
+    .recomendados {
+        margin: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .lib{
+        width: 90px;
+        height: auto;
+    }
+
+    /*TARGETAS*/
+    figure, .frontal, .trasero {
+        max-width: 90px;
+        max-height: 120px;
+    }
+
+    figure .trasero img {
+        height: 40px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contenedor-banner {
+        background-image: url(../img/banner3.jpg);
+        max-height: 200px;
+        width: 100%;
+        max-width: 500px;
+    }
+    .navegacion {
+        flex-direction: column;
+    }
+
+    .fa-search fa-1x {
+    }
+}

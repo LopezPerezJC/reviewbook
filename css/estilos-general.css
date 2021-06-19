@@ -1,0 +1,475 @@
+:root{
+    --color-general: #aed3f9;
+    --color-botones: #1C4881;
+    --color-botones-hover: #ED5B2E;
+    --color-fondo: #EBF2FA;
+    --color-primario: #ebf4fe;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: arial;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+	justify-content:space-around;
+	align-items:center;
+
+	flex-direction:row;
+	flex-wrap:wrap;
+    height: 100px;
+}
+header, footer {
+    width: 100%;
+    margin: auto;
+    background: #ebf4fe;
+}
+.logo img{
+    height: 6.25rem;
+    width: auto;
+}
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.izquierda {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.izq{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.der{
+    display: flex;    
+    justify-content: flex-end;
+    padding: 10px;
+}
+.menu{
+    /*display: block;
+    float: left;
+    padding: 1.5625rem;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+ul, li{
+    list-style: none;
+}
+.menu li a{
+    color: var(--color-botones);
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+.menu li .enlace-tematicas {
+    z-index: 1;
+}
+.enlace-inicio:hover,
+.enlace-tematicas:hover,
+.enlace-galeria:hover {
+    border-bottom: solid 0.125rem var(--color-botones);
+}
+.menu li ul li a{
+    background: #194373;
+    color: #fff;
+    /**/
+}
+.menu li ul li a:hover{
+    background: var(--color-botones-hover);
+    color: #fff;
+}
+
+.menu li ul li ul li a:hover{
+    background: var(--color-botones-hover);
+    color: #fff;
+}
+.menu > li{
+    float: left;
+}
+.menu li ul{
+    display: none;
+    position: absolute; /*HERE*/
+    min-width: 150px;
+    z-index: 2;
+}
+.menu li:hover > ul{
+    display: block;
+}
+
+.menu li ul li {
+    position: relative;/*para arreglor las pos de los subs*/
+    z-index: 3;/*HERE*/
+}
+.menu li ul li ul{
+    right: -9.375rem;
+    top:0rem;
+}
+/*-------------------*/
+
+/*-------------------*/
+/* Buscador*/
+/*-------------------*/
+.buscador {
+    display: flex;
+    align-items: center;
+}
+.buscador .input-bsc {
+    width: 13.75rem;
+    background-color: #fff;
+    border: solid 0rem;
+    outline: none;
+    text-align: center;
+    border-radius: 1.875rem;
+    padding: 10px 10px 10px 10px;
+}
+.buscador .btn-buscar {
+    width: auto;
+    background-color: #194373;
+    border: solid 0rem;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    margin-left: 10px;
+    padding: 10px 15px;
+}
+.input-bsc, .btn-buscar{
+    font-size: 14px;
+}
+.buscador .btn-buscar:hover{
+    background: #ff8148;
+}
+/*-------------------*/
+/*LOGIN*/
+/*-------------------*/
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
+}
+.icon-login {
+    height: 35px;
+    width: auto;
+}
+.login span a {
+    background: var(--color-botones);
+    text-decoration: none;
+    color: #fff;
+    padding: 4px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+.login span a:hover {
+    background: var(--color-botones-hover);
+    color: #000;
+}
+
+/*media querys*/
+@media screen and (max-width: 600px) {
+    *{
+        font-size: 14px;
+    }
+    
+    .login{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon-login{
+        width: 0px;
+        height: 0px;
+    }
+    .login span a{
+        background: var(--color-botones-hover);
+        color: #000;
+    }
+    .login span a:hover{
+        background: var(--color-botones);
+        color: black;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+    .img-banner{
+        width: 0px;
+        height: 0px;
+    }
+    .buscador .input-bsc{
+        padding: 5px;
+    }
+    .buscador .btn-buscar{
+        padding: 5px 7.5px;
+    }
+    .titulo-mas-leidos, .titulo-sobre-recomendados{
+        font-size: 15px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .contenedor-mas-leidos{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .contenedor-recomendaciones{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+/*-------------------*/
+/*FOOTER*/
+/*-------------------*/
+
+footer {
+    height: 250px;
+    width: 100%;
+    background: #2E4571;
+    clear: both;
+    display: flex;
+    justify-content: center;
+}
+/*CONTENEDOR PADRE*/
+.contenedor-footer{
+    display: flex;
+    height: auto;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 1280px;
+    padding: 5px;
+    color: #fff;
+}
+
+.seccion_enlaces{
+    /*background-color: #ED5B2E;*/
+    width: 100%;
+    display: flex;
+    padding: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+/*SECCIÓN LOGOTIPO FOOTER*/
+.seccion_logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.seccion_logo img{
+    height: 85px;
+    width: auto;
+}
+
+/*SECCION TABLA DE CONTENIDO*/
+/*CONTENEDOR 1/2*/
+.seccion_politicas {
+    /*background-color: rgb(33, 175, 52);*/
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'roboto', 'arial';
+}
+
+/*seccion 1/3*/
+.seccion1 {
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-left: 10px;
+    margin-top: 10pxs;
+}
+
+.seccion1 h2{
+    font-size: 16px;
+    padding: 4px 4px 4px 0px;
+}
+.seccion1 a{
+    padding: 4px 4px 4px 0px;
+    font-size: 14px;
+    text-decoration: none; color: #fff;
+}
+
+/*seccion 2/3*/
+.seccion2 {
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-left: 10px;
+    margin-top: 10pxs;
+}
+
+.seccion2 h2{
+    font-size: 16px;
+    padding: 4px 4px 4px 0px;
+}
+.seccion2 a{
+    padding: 4px 4px 4px 0px;
+    font-size: 14px;
+    text-decoration: none; color: #fff;
+}
+/*seccion 3/3*/
+.seccion_legal {
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-left: 10px;
+    margin-top: 10pxs;
+}
+
+.seccion_legal h2{
+    font-size: 16px;
+    padding: 4px 4px 4px 0px;
+}
+.seccion_legal a{
+    padding: 4px 4px 4px 0px;
+    font-size: 14px;
+    text-decoration: none; color: #fff;
+}
+
+/*SECCION REDES SOCIALES*/
+/*SECCION 2/2*/
+
+.seccion_redes_sociales {
+    background: #3B588F;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    padding: 8px;
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.enlacesRedes {
+    width: auto;
+    height: auto;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.enlacesRedes h2{
+    font-family: 'roboto', arial;
+    font-size: 16px;
+    text-transform:inherit;
+    padding-right: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.enlaces_redes_png {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.enlaces_redes_png img {
+    height: 36px;
+    margin: 4px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.derechos {
+    width: 70%;
+    height: auto;
+    padding: 8px;
+    display: flex;
+}
+.derechos p{
+    text-align:center;
+}
+/*MEDIA QUERy COMPARTIDOS*/
+
+@media screen and (max-width: 920px) {
+    /*LOGIN*/
+    .login {
+        display: none;
+    }
+     
+    /* PIE DE PÁGINA*/
+    footer {
+        height: auto;
+    }
+    /*logo y enlaces*/
+    .seccion_enlaces {
+        justify-content: center;
+        height: auto;
+    }
+    .seccion_politicas {
+        height: auto;
+    }
+    /*redes sociales y copy-ryght*/
+    .enlacesRedes {
+        justify-content: center;
+    }
+    .seccion_redes_sociales {
+        flex-direction: column;
+        height: auto;
+        border-radius: 0px;
+        margin: 0px;
+    }
+    .derechos {
+        width: auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    /*header*/
+    header {
+        height: auto;
+    }
+    .navegacion {
+        flex-direction: column;
+    }
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*izq o contenedor de enlaces*/
+    .izq {
+        justify-content: center;
+    }
+    .der {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    /*logotipo*/
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+
+    /*buscador*/
+    .input-bsc {
+        width: 260px;
+    }
+    form {
+        width: 80%;
+        margin: 0;
+    }
+}
+

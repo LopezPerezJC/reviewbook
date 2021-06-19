@@ -1,0 +1,413 @@
+:root{
+    --color-general: #aed3f9;
+    --color-botones: #1C4881;
+    --color-botones-hover: #ED5B2E;
+    --color-fondo: #ebf5ff;
+    --color-primario: #ebf4fe;
+}
+body {
+    color: #000;background-image: radial-gradient(circle at 50% -20.71%, #cbe7e1 0, #cae7e3 6.25%, #c9e7e6 12.5%, #c9e7e8 18.75%, #c9e7eb 25%, #c9e7ed 31.25%, #cae6ef 37.5%, #cbe6f1 43.75%, #cde5f2 50%, #cfe4f3 56.25%, #d1e4f4 62.5%, #d4e3f5 68.75%, #d7e2f5 75%, #dae1f5 81.25%, #dde0f4 87.5%, #e0e0f4 93.75%, #e3dff2 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+/*-------------------*/
+/*CONTENEDOR */
+/*-------------------*/
+.contenedor{
+    display: flex;
+    /*PUCHALE AQUI PARA CAMBIAR LA UBICACION DE LOS RECOMENDADOS*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-------------------*/
+/*resumen */
+/*-------------------*/
+.resumen{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 896px;
+    justify-content:flex-start;
+    background: linear-gradient(
+        to right bottom,
+        rgb(255, 255, 255),
+        rgba(255, 255, 255, 0.705)
+    );
+}
+
+/*-------------------*/
+/*BANNER */
+/*-------------------*/
+.img_principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 896px;
+    height: 350px;
+    background:url(../img/resenia_banner.jpg);
+}
+.img_principal p, .img_principal a{
+    font-size: 12px;
+}
+/*datos autor resenia */
+.autor-resenia {
+    color: #2E4571;
+    font-size: 15px;
+}
+
+
+.img_principal p a {
+    text-decoration: none;
+    color: #1C4881;
+}
+.titulo {
+    background:#2E4571;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+ }
+
+.titulo-resenia {
+    font-size: 30px;
+}
+
+.titulo p { font-size: 18px; }
+.creditos { margin: 8px;}
+/*-------------------*/
+/*datos de la reseña */
+/*-------------------*/
+
+
+
+/*-------------------*/
+/*contenedor texto */
+/*-------------------*/
+.contenedor-texto {
+    width: 100%;
+    background-color: #2E4571;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-texto h4 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.introduccion, .desarrollo, .final, .datos, .opinion_txt{
+    width: 100%;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
+    margin: 5px;
+    background: #f5f5f5;
+    text-align: left;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.contenedor-texto hr {
+    background: #ED5B2E;
+    border: none;
+    margin: 8px;
+    border-radius: 5px;
+    height: 5px;
+}
+/********************/
+/*--sección opinion--*/
+/*******************/
+.opinion_resenia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 5px;
+}
+
+.opinion_txt {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
+    background: #f5f5f5;
+    text-align: left;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+/*sección targeta de presentación*/
+.targeta_presentacion {
+    width: 225px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #f5f5f5;
+    border-radius: 8px;
+    margin: 0px 5px 5px 5px;
+}
+.targeta_presentacion img {
+    width: 150px;
+    height: auto;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.targeta_presentacion h2 {
+    color: #2E4571;
+    font-size: 16px;
+    margin-top: 2px;
+    text-align: center;
+}
+.targeta_presentacion p {
+    color: #2E4571;
+    font-size: 15px;
+}
+.targeta_presentacion a {
+    color: #2E4571;
+    text-decoration: none;
+    font-size: 15px;
+}
+/*iconos targetas*/
+.fa-laptop, .fa-school {
+    color: #2E4571;
+    background: none;
+    margin: 2px;
+}
+
+/*-------------------*/
+/*recomendados */
+/*-------------------*/
+.recomendados{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.4)
+    );
+    max-width: 374px;
+}
+.contenedor-targeta{
+    padding: 10px;
+}
+.titulo-aside {
+    padding: 10px;
+    color: #1C4881;
+}
+.contenedor-targeta a{
+    display: inline-block;
+}
+.contenedor-targeta:hover figure {/*cuando se active figure se rota*/
+    transform: perspective(600px) rotateY(180deg);
+
+    -webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+}
+
+figure {
+    width: 180px;
+    height: 240px;
+    margin:0rem;
+    position: relative;/*modificar posiciones*/
+    transition: all ease .5s; /*indicar la rotacion*/
+    transform-style: preserve-3d;/*permite compartir con los elementos hijo la propiedad de 3d*/
+    transform: perspective(600px) rotateY(0deg);/*deg = grados*/
+}
+figure .frontal{
+    width: 180px;
+    height: 240px;
+    border-radius: 0.3125rem;
+    transition: all ease .5s;
+}
+
+#add{
+    width: 180px;
+    height: 240px;
+}
+
+figure .trasero {
+    width: 180px;
+    height: 240px;
+    /*border-radius: 5px;*/
+    transition: all ease .5s;
+}
+
+figure .frontal {
+    display: block;
+    /*backface-visibility: hidden;*//*modifica la vista de atras*/
+}
+
+figure .trasero {
+    position: absolute; /*posicionar el texto sobre la imagen*/
+    top:0;
+
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    background: #2E4571;
+
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden; /*ocultar cara trasera de la targeta*/
+    overflow: auto; /*scroll si el texto rebasa el tam establecido*/
+}
+/*fondos trasero*/
+.contenedor-targeta figcaption:nth-child(1) {
+    background: #D4F1F4;    
+}
+
+figure .trasero img {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+}
+figure .trasero .tit-autor{
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 0.3125rem;
+    margin-top: 0.625rem;
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+figure .trasero hr{
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-bottom: 0.3125rem;
+    opacity: .5;
+}
+figure .trasero p{
+    font-family: 'open sans' ;
+    line-height: 1.125rem;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+/*MEDIA QUERy*/
+@media screen and (max-width: 1150px){
+    /*SECCIÓN TARGETAS DE RECOMENDACIÓN*/
+    .recomendados {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /*LOGIN*/
+    .login {
+        display: none;
+    }
+    
+    
+    /*SECCIÓN OPINIÓN Y TARGETA DE PRESENTACION*/
+    .opinion_resenia {
+        flex-direction: column;
+    }
+    .opinion_txt {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 10px 10px 0px;
+    }
+    .targeta_presentacion {
+        width: 100%;
+        max-width: 100%;
+        margin: 0px 10px 0px 0px;
+    }
+    .targeta_presentacion p {
+        text-align: center;
+    }
+        
+    /* PIE DE PÁGINA*/
+    footer {
+        height: auto;
+    }
+    /*logo y enlaces*/
+    .seccion_enlaces {
+        justify-content: center;
+        height: auto;
+    }
+    .seccion_politicas {
+        height: auto;
+    }
+    /*redes sociales y copy-ryght*/
+    .enlacesRedes {
+        justify-content: center;
+    }
+    .seccion_redes_sociales {
+        flex-direction: column;
+        height: auto;
+        border-radius: 0px;
+        margin: 0px;
+    }
+    .derechos {
+        width: auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    /*header*/
+    header {
+        height: auto;
+    }
+    .navegacion {
+        flex-direction: column;
+    }
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*izq o contenedor de enlaces*/
+    .izq {
+        justify-content: center;
+    }
+    .der {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    /*logotipo*/
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+
+    /*buscador*/
+    .input-bsc {
+        width: 240px;
+    }
+    
+    /*banner*/
+    .img_principal {
+        height: 200px;
+    }
+
+    .titulo-resenia {
+        font-size: 20px;
+    }
+    .titulo p {
+        font-size: 12px;
+    }
+}

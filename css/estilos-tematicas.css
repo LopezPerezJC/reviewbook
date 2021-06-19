@@ -1,0 +1,109 @@
+body {
+    background: #fff;
+    font-family: Arial;
+    font-size: 14px;
+}
+.main {
+    width: 100%;
+    max-width: 1280px;
+    margin:0px auto;
+}
+/*-------------------*/
+/*temáticas*/
+/*-------------------*/
+.titulo-tematica h1{
+    font-size: 40px;
+    color: #fff;
+    height: 20px;
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+    background: #D6D66F;
+    height: 50px;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedor-padre{
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin:0px auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contenedor-hijo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px;
+    max-width: 220px;
+    height: 320px;
+    padding: 5px;
+    margin: 10px;
+    background: #2E4571;
+    border-radius: 5px;
+}
+.contenedor-hijo img{
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedor-hijo img:hover{
+    position: absolute;
+    height: 320px;
+    width: 220px;
+    transition: all ease .8s;
+}
+.contenedor-hijo h2{
+    padding: 5px;
+    font-size: 16px;
+    font-weight:lighter;
+    color: #fff;
+}
+.contenedor-hijo p{
+    color: #fff;
+    font-size: 14px;
+}
+.contenedor-hijo a{
+    height: 40px;
+    width: 110px;
+    margin-top: 5px;
+    display: flex;
+    background: #F75777;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-radius: 30px;
+ }
+ .contenedor-hijo a:hover{
+    background: #E6862E;
+    color: #000;
+}
+@media screen and (max-width: 810px) {
+    /*targetas*/
+    .contenedor-padre {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    /*logotipo*/
+    .titulo-tematica h1 {
+        font-size: 20px;
+        color: #fff;
+        height: auto;
+        padding: 5px;
+        text-align: center;
+        margin: 20px 0px 30px 0px;
+        background: #D6D66F;
+    }
+}

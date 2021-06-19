@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="../css/estilos-general.css">
+    <link rel="stylesheet" href="../css/estilos-formulario.css">
+</head>
+<body>
+    <header>
+        <!--SECCION navegacion-->
+        <nav class="navegacion">
+            <div class="logo">
+                <img src="../img/Logo2.png" alt="Logotipo">
+            </div>
+            <div class="izq">
+                <ul class="menu">
+                    <li><a class="enlace-inicio" href="../index.html">Inicio</a></li>
+                    <li><a class="enlace-tematicas">Tem&aacute;ticas</a>
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">Literatura Universal</a>
+                                <ul>
+                                    <li><a href="#" target="_blank">Epica cl&aacute;sica</a></li>
+                                    <li><a href="#" target="_blank">Epica medievel</a></li>
+                                    <li><a href="#" target="_blank">Novela</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">Género lirico</a>
+                                <ul>
+                                    <li><a href="#" target="_blank">Epigramas</a></li>
+                                    <li><a href="#" target="_blank">Romance</a></li>
+                                    <li><a href="#" target="_blank">Oda</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">Género dramatico</a>
+                                <ul>
+                                    <li><a href="#" target="_blank">Tragedia</a></li>
+                                    <li><a href="#" target="_blank">Comedia</a></li>
+                                    <li><a href="#" target="_blank">Drama</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">Género narrativo</a>
+                                <ul>
+                                    <li><a href="#" target="_blank">Leyendas</a></li>
+                                    <li><a href="#" target="_blank">F&aacute;bulas</a></li>
+                                    <li><a href="#" target="_blank">Par&aacute;bolas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="enlace-galeria" href="../html/galeria.html">Galer&iacute;a</a></li>
+                </ul>
+            </div>
+            
+            <div class="der">
+                <div class="buscador">
+                    <input type="text" placeholder="Introduce el nombre de un libro" class="input-bsc"></input>
+                    <button class="btn-buscar">Buscar</button>
+                </div>
+            </div>
+            <div class="login">
+                <span><img src="../img/profile-user.svg" alt="Login" class="icon-login"></span>
+                <span><a href="../html/formulario-registro.html">Login</a></span>
+            </div>
+        </nav>
+    </header>
+
+    <!--FORMULARIO-->
+    
+    <div class="contenedor-formulario">
+        <form action="registro.php" method="post" id="form">
+            <div class="formulario">
+                <h1>Registro</h1>
+                <div class="grupo">
+                    <input type="text" id="name" name="nombreUsuario" required> <span class="barra"></span>
+                    <label for="">Nombre de Usuario</label>
+                </div>
+                <div class="grupo">
+                    <input type="email" id="name" name="correo" required> <span class="barra"></span>
+                    <label for="">Email</label>
+                </div>
+                <div class="grupo">
+                    <input type="text" id="name" name="contrasenia" required> <span class="barra"></span>
+                    <label for="" type="password" >Contrase&ntilde;a</label>
+                </div>
+                <button type="submit">Registrar</button>
+            </div>
+        </form>
+    </div>
+    
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="seccion_enlaces">
+                <div class="seccion_logo">
+                    <img src="/img/Logo3.png" alt="logotipo">
+                </div>
+                <div class="seccion_politicas">
+                    <div class="seccion1">
+                        <h2>G&eacute;neros</h2>
+                        <a href="#">G&eacute;nero l&iacute;rico</a>
+                        <a href="#">G&eacute;nero narrativo</a>
+                        <a href="#">G&eacute;nero dram&aacute;tico</a>
+                    </div>
+                    <div class="seccion2">
+                        <h2>Sobre Nosotros</h2>
+                        <a href="#">Conocenos</a>
+                    </div>
+                    <div class="seccion_legal">
+                        <h2>Legal</h2>
+                        <a href="#">Aviso de privacidad</a><a href="#">Términos y condiciones</a>
+                    </div>
+                </div>
+            </div>
+            <div class="seccion_redes_sociales">
+                <div class="enlacesRedes">
+                    <h2>Siguenos</h2>
+                    <div class="enlaces_redes_png">
+                        <a href="#"><img src="/img/008-youtube.png" height="36" alt="logo youtube"></a>
+                        <a href="#"><img src="/img/011-instagram.png" height="36" alt="logo instagram"></a>
+                        <a href="#"><img src="/img/016-tiktok.png" height="36" alt="logo tiktok"></a>
+                        <a href="#"><img src="/img/001-facebook.png" height="36" alt="logo facebook"></a>
+                    </div>
+                </div>
+                <div class="derechos">
+                    <p>Todos los Derechos Reservados ReviewBook 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
