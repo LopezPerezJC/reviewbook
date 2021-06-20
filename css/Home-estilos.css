@@ -21,7 +21,7 @@ body {
 /* banner*/
 /*-------------------*/
 .contenedor-banner{
-    background-image: url(../img/Banner_ReviewBook.png);
+    background-image: url(../img/banner4.jpg);
     width: 100%;
     max-width: 1920px;
     height: 500px;
@@ -297,6 +297,8 @@ body {
     margin: 10px;
     background: #2E4571;
     color: #fff;
+    margin-left: auto;
+    margin-right: auto;
 }
 .lib{
     height: 180px;
@@ -311,6 +313,8 @@ body {
     padding: 3px;
     font-size: 16px;
     width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .recomendados p {
     font-size: 14px;
@@ -496,6 +500,12 @@ figure .trasero p{
     }
 }
 
+@media screen and (max-width: 1420px) {
+    .contenedor-banner {
+        background-image: url(../img/banner5.jpg);
+        max-height: 500px;
+    }
+}
 @media screen and (max-width: 900px) {
     .contenedor-banner {
         background-image: url(../img/banner2.jpg);
@@ -515,8 +525,11 @@ figure .trasero p{
         display: none;
     }
 }
-@media screen and (max-width: 815px) {
-
+@media screen and (max-width: 810px) {
+    .izquierda {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 600px) {
     .titulo-mas-leidos, .titulo-sobre-recomendados, .titulo_principal_tematicas {
