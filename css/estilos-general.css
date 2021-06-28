@@ -181,6 +181,13 @@ ul, li{
     background: var(--color-botones-hover);
     color: #000;
 }
+/*LOGIN ENLACE*/
+#login-enlace {
+    display: none;
+}
+
+
+
 
 /*media querys*/
 @media screen and (max-width: 600px) {
@@ -408,6 +415,11 @@ footer {
     .login {
         display: none;
     }
+    /*LOGIN ENLACE*/
+    #login-enlace {
+        display: block;
+    }
+
      
     /* PIE DE PÁGINA*/
     footer {
