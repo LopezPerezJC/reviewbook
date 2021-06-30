@@ -14,7 +14,7 @@
     font-family: 'Roboto', sans-serif;
 }
 .banner_slogan {
-    background: url('../img/banner-principal-about-us-version-web.png');
+    background: url(../img/banner-principal-about-us-version-web.png);
     width: auto;
     max-width: 1200px;
     min-height: 400px;
