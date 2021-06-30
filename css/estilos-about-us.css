@@ -14,7 +14,7 @@
     font-family: 'Roboto', sans-serif;
 }
 .banner_slogan {
-    background: url('/img/banner-principal-about-us-version-web.png');
+    background: url('../img/banner-principal-about-us-version-web.png');
     width: auto;
     max-width: 1200px;
     min-height: 400px;
@@ -135,7 +135,7 @@
 @media screen and (max-width: 1000px) {
     /*banner principal*/
     .banner_slogan {
-        background: url('/img/banner-principal-about-us-version-tablet.png');
+        background: url('../img/banner-principal-about-us-version-tablet.png');
     }
     .banner_slogan h2 {
         font-size: 40px;
@@ -145,6 +145,6 @@
 @media screen and (max-width: 750px) {
     /*banner principal*/
     .banner_slogan {
-        background: url('/img/banner-principal-about-us-version-movil.png');
+        background: url('../img/banner-principal-about-us-version-movil.png');
     }
 }
