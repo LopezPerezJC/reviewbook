@@ -1,0 +1,150 @@
+:root {
+    --color_principal: #2E4571;
+    --color_secundario: #e8f5ff;
+    --color_fondo: #f5f5f5;
+    --color-fondo-targetas: #C4C4C4;
+}
+
+.contenedor {
+    width: auto;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.banner_slogan {
+    background: url('/img/banner-principal-about-us-version-web.png');
+    width: auto;
+    max-width: 1200px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    
+}
+.banner_slogan h2{
+    margin: 10px;
+    padding: 4px;
+    color: var(--color_principal);
+    font-size: 50px;
+    font-weight: bold;
+    background-color: var(--color_secundario);
+    border: solid 4px var(--color_principal);
+}
+.about-us {
+    padding: 20px 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background: url('../img/banner-we.png');
+    color: #fff;
+}
+.about-us h2 {
+    font-size: 40px;
+    text-align: left;
+    margin: 20px;
+}
+.about-us p{
+    font-family: sans-serif;
+    margin: 20px;
+    font-size: 25px;
+}
+.objetivos {
+    width: auto;
+    max-width: 1200px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.vision, .mision {
+    height: 200px;
+    width: 290px;
+    background-color: var(--color_principal);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.titulo-vision, .titulo-mision {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 20px;
+}
+.titulo-vision h2, .titulo-mision h2{
+    font-size: 25px;
+    margin-left: 8px;
+}
+.opiniones {
+    min-height: 380px;
+    background: var(--color_principal);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.opiniones .opinion {
+    color: #000;
+    height: 200px;
+    width: 390px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 8px;
+    background-color: var(--color_secundario);
+}
+.opiniones .opinion img {
+    height: 180px;
+    width: 110px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+.txt-opinion {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 8px;
+}
+.txt-opinion h2 {
+    color: #fff;
+    background-color: var(--color_principal);
+    border-radius: 30px;
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 8px;
+}
+.txt-opinion p {
+    font-size: 14px;
+}
+
+/*=== MEDIA QUERYS===*/
+@media screen and (max-width: 1000px) {
+    /*banner principal*/
+    .banner_slogan {
+        background: url('/img/banner-principal-about-us-version-tablet.png');
+    }
+    .banner_slogan h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    /*banner principal*/
+    .banner_slogan {
+        background: url('/img/banner-principal-about-us-version-movil.png');
+    }
+}
