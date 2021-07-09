@@ -130,6 +130,10 @@
 .txt-opinion p {
     font-size: 14px;
 }
+.derechos p a {
+    color: #f5f5f5;
+    text-decoration:underline #ffae00;
+}
 
 /*=== MEDIA QUERYS===*/
 @media screen and (max-width: 1000px) {
